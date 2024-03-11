@@ -1,33 +1,59 @@
 .wp-block-button {
 
-    &__link {
-        text-decoration: none;
-        border-radius: 0;
-        background-color: $themeColor2;
-        color: #fff;
-        padding: 14px 25px;
-        font-size: 18px;
-        line-height: 1.5;
+	&__link {
+		text-decoration: none;
+		border-radius: 0;
+		background-color: $themeColor2;
+		color: #fff;
+		padding: 1em 2em;
+		font-size: 16px;
+		line-height: 1.5;
+		text-transform: uppercase;
+		font-weight: 500;
 
-        &:hover,
-        &:focus,
-        &:active {
-            text-decoration: none!important;
-            background-color: $themeColor1 !important;
-        }
-    }
+		&:hover,
+		&:focus,
+		&:active {
+			text-decoration: none !important;
+		}
+	}
 
-    &.is-style-outline {
+	&:not(.is-style-creative) {
 
-        .wp-block-button__link {
+		&__link {
+			&:hover,
+			&:focus,
+			&:active {
+				background-color: $themeColor1 !important;
+			}
+		}
+	}
 
-            &:hover,
-            &:focus,
-            &:active {
-                border-color: $themeColor1 !important;
-                background-color: $themeColor1 !important;
-                color: $themeColor6 !important;
-            }
-        }
-    }
+
+	&.is-style-outline {
+
+		.wp-block-button__link {
+
+			&:hover,
+			&:focus,
+			&:active {
+				border-color: $themeColor1 !important;
+				background-color: $themeColor1 !important;
+				color: $themeColor6 !important;
+			}
+		}
+	}
+
+	&.is-style-creative {
+
+		.wp-block-button__link {
+			background-position: 0;
+			background-size: 50% 100%;
+			background-repeat: no-repeat;
+
+			&:hover {
+				background-position: 100%;
+			}
+		}
+	}
 }

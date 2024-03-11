@@ -1,42 +1,42 @@
 .wp-block-calendar {
 
-    table {
-        &:where(:not(.has-text-color)) {
-            color: $themeColor1;
-        }
+	table {
+		&:where(:not(.has-text-color)) {
+			color: $themeColor1;
+		}
 
-        &:not(.has-background) {
-            th, td {
-                background-color: $themeColor1;
-                color: $themeColor6;
-                border-color: $themeColor3;
-            }
-        }
-    }
+		&:not(.has-background) {
+			th, td {
+				background-color: $themeColor1;
+				color: $themeColor6;
+				border-color: $themeColor3;
+			}
+		}
+	}
 
-    th,
-    tbody td {
-        border-width: 0 0 1px 0;
-    }
+	th,
+	tbody td {
+		border-width: 0 0 1px 0;
+	}
 
-    tfoot td {
+	tfoot td {
 
-    }
+	}
 
-    table th {
+	table th {
 
-    }
+	}
 
-    a {
+	a {
 
-    }
+	}
 
-    tfoot a {
+	tfoot a {
 
-    }
+	}
 
-    table tbody,
-    table caption {
+	table tbody,
+	table caption {
 
-    }
+	}
 }

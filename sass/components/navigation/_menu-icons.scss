@@ -1,0 +1,202 @@
+.social-menu {
+	line-height: 1;
+
+	a {
+		position: relative;
+		color: $themeColor1;
+		text-decoration: none;
+		transition: none;
+
+		&:hover {
+			&:before {
+				color: $themeColor2;
+			}
+		}
+
+		.menu-text {
+			clip: rect(1px, 1px, 1px, 1px);
+			position: absolute !important;
+			height: 1px;
+			width: 1px;
+			overflow: hidden;
+		}
+	}
+
+	a:before {
+		font-family: "Font Awesome 5 Brands", "Font Awesome 5 Free";
+		text-rendering: auto; // optimizelegibility throws things off #1094
+		-webkit-font-smoothing: antialiased;
+		-moz-osx-font-smoothing: grayscale;
+		text-indent: 0;
+		display: inline-block !important;
+		content: fa-content($fa-var-info);
+		font-weight: 500;
+		font-size: 22px;
+		margin-right: 0;
+		transition: .3s;
+	}
+
+	a:empty {
+		width: 1em;
+	}
+
+	a[href*="twitter.com"]:before {
+		content: fa-content($fa-var-twitter);
+	}
+
+	a[href*="facebook.com"]:before {
+		content: fa-content($fa-var-facebook-f);
+	}
+
+	a[href*="google.com"]:before {
+		content: fa-content($fa-var-google-plus);
+	}
+
+	a[href*="/map"]:before {
+		content: fa-content($fa-var-map-marker);
+	}
+
+	a[href*="pinterest.com"]:before {
+		content: fa-content($fa-var-pinterest);
+	}
+
+	a[href*="foursquare.com"]:before {
+		content: fa-content($fa-var-foursquare);
+	}
+
+	a[href*="yahoo.com"]:before {
+		content: fa-content($fa-var-yahoo);
+	}
+
+	a[href*="skype:"]:before {
+		content: fa-content($fa-var-skype);
+	}
+
+	a[href*="yelp.com"]:before {
+		content: fa-content($fa-var-yelp);
+	}
+
+	a[href*="linkedin.com"]:before {
+		content: fa-content($fa-var-linkedin);
+	}
+
+	a[href*="viadeo.com"]:before {
+		content: fa-content($fa-var-viadeo);
+	}
+
+	a[href*="xing.com"]:before {
+		content: fa-content($fa-var-xing);
+	}
+
+	a[href*="soundcloud.com"]:before {
+		content: fa-content($fa-var-soundcloud);
+	}
+
+	a[href*="spotify.com"]:before {
+		content: fa-content($fa-var-spotify);
+	}
+
+	a[href*="last.fm"]:before {
+		content: fa-content($fa-var-lastfm);
+	}
+
+	a[href*="youtube.com"]:before {
+		content: fa-content($fa-var-youtube);
+	}
+
+	a[href*="vimeo.com"]:before {
+		content: fa-content($fa-var-vimeo);
+	}
+
+	a[href*="vine.com"]:before {
+		content: fa-content($fa-var-vine);
+	}
+
+	a[href*="flickr.com"]:before {
+		content: fa-content($fa-var-flickr);
+	}
+
+	a[href*="500px.com"]:before {
+		content: fa-content($fa-var-500px);
+	}
+
+	a[href*="instagram.com"]:before {
+		content: fa-content($fa-var-instagram);
+	}
+
+	a[href*="tumblr.com"]:before {
+		content: fa-content($fa-var-tumblr);
+	}
+
+	a[href*="reddit.com"]:before {
+		content: fa-content($fa-var-reddit);
+	}
+
+	a[href*="dribbble.com"]:before {
+		content: fa-content($fa-var-dribbble);
+	}
+
+	a[href*="stumbleupon.com"]:before {
+		content: fa-content($fa-var-stumbleupon);
+	}
+
+	a[href*="digg.com"]:before {
+		content: fa-content($fa-var-digg);
+	}
+
+	a[href*="behance.net"]:before {
+		content: fa-content($fa-var-behance);
+	}
+
+	a[href*="delicious.com"]:before {
+		content: fa-content($fa-var-delicious);
+	}
+
+	a[href*="deviantart.com"]:before {
+		content: fa-content($fa-var-deviantart);
+	}
+
+	a[href*="play.com"]:before {
+		content: fa-content($fa-var-play);
+	}
+
+	a[href*="wikipedia.com"]:before {
+		content: fa-content($fa-var-wikipedia-w);
+	}
+
+	a[href*="apple.com"]:before {
+		content: fa-content($fa-var-apple);
+	}
+
+	a[href*="github.com"]:before {
+		content: fa-content($fa-var-github);
+	}
+
+	a[href*="github.io"]:before {
+		content: fa-content($fa-var-github);
+	}
+
+	a[href*="windows.com"]:before {
+		content: fa-content($fa-var-windows);
+	}
+
+	a[href*="slideshare.net"]:before {
+		content: fa-content($fa-var-slideshare);
+	}
+
+	a[href*=".rss"]:before {
+		content: fa-content($fa-var-rss);
+	}
+
+	a[href*="vk.com"]:before {
+		content: fa-content($fa-var-vk);
+	}
+
+	a[href*="tel:"]:before {
+		content: fa-content($fa-var-phone);
+	}
+
+	a[href*="mailto:"]:before {
+		content: fa-content($fa-var-envelope);
+	}
+}

@@ -1,0 +1,21 @@
+.single-mpa_employee {
+	
+	.single-post-2-cols-content {
+		position: relative;
+
+		&-wrapper {
+			justify-content: space-between;
+			max-width: $content-width-wide;
+			padding: 70px 0;
+			margin: 0 auto;
+
+			@include respond-to(sm) {
+				display: flex;
+			}
+
+			@include respond-to(md) {
+				padding: 140px 0;
+			}
+		}
+	}
+}

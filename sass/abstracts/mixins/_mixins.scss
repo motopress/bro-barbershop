@@ -9,36 +9,3 @@
 @mixin column-width($numberColumns: 3) {
 	width: map-get($columns, $numberColumns) - ( ( $columns__margin * ( $numberColumns - 1 ) ) / $numberColumns );
 }
-
-
-@keyframes btnSplit {
-	0%,
-	100% {
-		transform: translateX(100%) scaleX(1);
-		transform-origin: left;
-	}
-
-	50% {
-		transform: translateX(0%) scaleX(2);
-	}
-
-	100% {
-		transform: translateX(0%) scaleX(1);
-	}
-}
-
-@keyframes btnSplitHover {
-	0%,
-	100% {
-		transform: translateX(0%) scaleX(1);
-		transform-origin: left;
-	}
-
-	50% {
-		transform: translateX(0%) scaleX(2);
-	}
-
-	100% {
-		transform: translateX(100%) scaleX(1);
-	}
-}

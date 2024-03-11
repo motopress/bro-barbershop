@@ -5,12 +5,12 @@
 // slug: color
 $colors: () !default;
 $colors: map-merge((
-    color-1: $themeColor1,
-    color-2: $themeColor2,
-    color-3: $themeColor3,
-    color-4: $themeColor4,
-    color-5: $themeColor5,
-    color-6: $themeColor6,
+		color-1: $themeColor1,
+		color-2: $themeColor2,
+		color-3: $themeColor3,
+		color-4: $themeColor4,
+		color-5: $themeColor5,
+		color-6: $themeColor6,
 ), $colors);
 
 // Block width for different alignments

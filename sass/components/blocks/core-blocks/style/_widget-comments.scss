@@ -1,25 +1,25 @@
 .wp-block-latest-comments {
-    padding: 0;
+	padding: 0;
 }
 
 ol.wp-block-latest-comments {
-    margin-left: auto;
+	margin-left: auto;
 }
 
 .wp-block-latest-comments__comment {
 
-    .has-avatars & {
+	.has-avatars & {
 
-        .wp-block-latest-comments__comment-meta,
-        .wp-block-latest-comments__comment-excerpt {
+		.wp-block-latest-comments__comment-meta,
+		.wp-block-latest-comments__comment-excerpt {
 
-        }
-    }
+		}
+	}
 
-    .has-dates &,
-    .has-excerpts & {
+	.has-dates &,
+	.has-excerpts & {
 
-    }
+	}
 }
 
 .wp-block-latest-comments__comment-excerpt p {

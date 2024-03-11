@@ -16,29 +16,29 @@ $screen-sm-max: ($screen-md - 1);
 $screen-md-max: ($screen-lg - 1);
 
 @mixin respond-to($media) {
-    @if $media == xs {
-        @media (max-width: $screen-xs-max) {
-            @content;
-        }
-    } @else if $media == sm {
-        @media (min-width: $screen-sm) {
-            @content;
-        }
-    } @else if $media == smmax {
-        @media (max-width: $screen-sm-max) {
-            @content;
-        }
-    } @else if $media == md {
-        @media (min-width: $screen-md) {
-            @content;
-        }
-    } @else if $media == mdmax {
-        @media (max-width: $screen-md-max) {
-            @content;
-        }
-    } @else if $media == lg {
-        @media (min-width: $screen-lg) {
-            @content;
-        }
-    }
+	@if $media == xs {
+		@media (max-width: $screen-xs-max) {
+			@content;
+		}
+	} @else if $media == sm {
+		@media (min-width: $screen-sm) {
+			@content;
+		}
+	} @else if $media == smmax {
+		@media (max-width: $screen-sm-max) {
+			@content;
+		}
+	} @else if $media == md {
+		@media (min-width: $screen-md) {
+			@content;
+		}
+	} @else if $media == mdmax {
+		@media (max-width: $screen-md-max) {
+			@content;
+		}
+	} @else if $media == lg {
+		@media (min-width: $screen-lg) {
+			@content;
+		}
+	}
 }

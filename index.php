@@ -13,60 +13,69 @@
  */
 
 get_header();
-$blog_style = get_theme_mod('bro_barbershop_blog_layout', '');
+$blog_style = get_theme_mod( 'bro_barbershop_blog_layout', '' );
 ?>
 
-	<main id="primary" class="site-main">
+    <main id="primary" class="site-main">
 
-            <?php
+		<?php
 
-            if ( have_posts() ) :
+		if ( have_posts() ) :
 
-                if ( is_home() && ! is_front_page() ) :
-                    ?>
-                    <header>
-                        <h1 class="page-title screen-reader-text"><?php single_post_title(); ?></h1>
-                    </header>
-                <?php
-                endif;
-                ?>
-                <div class="posts-wrapper">
+		if ( is_home() && ! is_front_page() ) :
+			?>
 
-                <?php if ($blog_style == 'grid') { ?>
-                    <div class="grid-posts">
-                <?php } ?>
+            <header class="entry-header page-header">
+                <div class="page-header-info">
+                    <h1 class="entry-title">
+						<?php single_post_title(); ?>
+                    </h1>
+                </div>
+				<?php
+				bro_barbershop_header_image();
+				bro_barbershop_breadcrumbs();
+				?>
+            </header><!-- .entry-header -->
+		<?php
+		endif;
+		?>
+        <div class="posts-wrapper">
 
-                <?php
-                /* Start the Loop */
-                while ( have_posts() ) :
-                    the_post();
+			<?php if ( $blog_style == 'grid' ) { ?>
+            <div class="grid-posts">
+				<?php } ?>
 
-                    /*
-                     * Include the Post-Type-specific template for the content.
-                     * If you want to override this in a child theme, then include a file
-                     * called content-___.php (where ___ is the Post Type name) and that will be used instead.
-                     */
-                    get_template_part( 'template-parts/content-loop', $blog_style . '-' . get_post_type() );
+				<?php
+				/* Start the Loop */
+				while ( have_posts() ) :
+					the_post();
 
-                endwhile; ?>
+					/*
+					 * Include the Post-Type-specific template for the content.
+					 * If you want to override this in a child theme, then include a file
+					 * called content-___.php (where ___ is the Post Type name) and that will be used instead.
+					 */
+					get_template_part( 'template-parts/content-loop', $blog_style . '-' . get_post_type() );
 
-                <?php if ($blog_style == 'grid') { ?>
-                    </div>
-                <?php } ?>
+				endwhile; ?>
 
-                <?php
-                bro_barbershop_posts_pagination();
+				<?php if ( $blog_style == 'grid' ) { ?>
+            </div>
+		<?php } ?>
 
-            else :
+			<?php
+			bro_barbershop_posts_pagination();
 
-                get_template_part( 'template-parts/content', 'none' );
+			else :
 
-            endif;
-            ?>
+				get_template_part( 'template-parts/content', 'none' );
+
+			endif;
+			?>
 
         </div>
 
-	</main><!-- #main -->
+    </main><!-- #main -->
 
 <?php
 get_footer();

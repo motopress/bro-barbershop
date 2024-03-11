@@ -1,13 +1,19 @@
 .wp-block-group {
-    &.has-background {
+	&.has-background {
 
-    }
+	}
 
-    .wp-block-group__inner-container{
-        > *{
-            &:last-child{
-                margin-bottom: 0;
-            }
-        }
-    }
+	.wp-block-group__inner-container {
+		> * {
+			&:last-child {
+				margin-bottom: 0;
+			}
+		}
+	}
+
+	&.is-style-border-bottom {
+		padding: 0 0 10px;
+		margin-bottom: 10px;
+		border-bottom: 1px solid $themeColor3;
+	}
 }

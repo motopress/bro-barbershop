@@ -1,0 +1,13 @@
+.wp-block-getwid-table {
+	&.is-style-hoverable {
+		tbody {
+			tr {
+				&:hover {
+					td {
+						background-color: $themeColor3;
+					}
+				}
+			}
+		}
+	}
+}

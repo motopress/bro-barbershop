@@ -1,24 +1,50 @@
 .wp-block-image {
 
-    .alignleft {
+	.alignleft {
 
-    }
+	}
 
-    .alignright {
+	.alignright {
 
-    }
+	}
 
-    .aligncenter {
+	.aligncenter {
 
-    }
+	}
 
-    img {
+	img {
 
-    }
+	}
 
-    figcaption {
-        font-size: .875em;
-        text-align: center;
-        margin: 10px 0 0;
-    }
+	figcaption {
+		font-size: .875em;
+		text-align: center;
+		margin: 10px 0 0;
+	}
+
+	&.wp-lightbox-container {
+		position: relative;
+
+		&:after {
+			content: '';
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			background: rgba($themeColor1, 0.5) url('images/icon-search.svg') no-repeat center center;
+			opacity: 0;
+			transition: .25s;
+			pointer-events: none;
+		}
+
+		&:hover {
+
+			&:after {
+				opacity: 1;
+			}
+		}
+
+		.lightbox-trigger {
+			display: none;
+		}
+	}
 }

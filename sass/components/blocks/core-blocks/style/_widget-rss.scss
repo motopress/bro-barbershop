@@ -1,27 +1,27 @@
 .wp-block-rss {
 
-    &.alignleft {
+	&.alignleft {
 
-    }
+	}
 
-    &.alignright {
+	&.alignright {
 
-    }
+	}
 
-    &.is-grid {
+	&.is-grid {
 
-        li {
-            margin: 0 $wp-block-rss__grid-gap $wp-block-rss__grid-gap 0;
-        }
-    }
+		li {
+			margin: 0 $wp-block-rss__grid-gap $wp-block-rss__grid-gap 0;
+		}
+	}
 
-    @include respond-to(sm) {
-        @for $i from 2 through 6 {
-            &.columns-#{ $i } li {
-                width: calc((100% / #{ $i }) - #{$wp-block-rss__grid-gap});
-            }
-        }
-    }
+	@include respond-to(sm) {
+		@for $i from 2 through 6 {
+			&.columns-#{ $i } li {
+				width: calc((100% / #{ $i }) - #{$wp-block-rss__grid-gap});
+			}
+		}
+	}
 }
 
 .wp-block-rss__item-publish-date,

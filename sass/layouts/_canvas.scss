@@ -1,0 +1,11 @@
+.site-main {
+
+	&.template-canvas,
+	&.template-canvas-header {
+		padding-bottom: 0;
+
+		.page-header {
+			margin-bottom: 0;
+		}
+	}
+}

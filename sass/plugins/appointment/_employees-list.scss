@@ -1,0 +1,96 @@
+.mpa-employees-list-shortcode,
+.wp-block-getwid-post-carousel {
+
+	.mpa-loop-post-wrapper {
+		background-color: $themeColor5;
+
+		@include respond-to(md) {
+			display: flex;
+			height: 100%;
+		}
+	}
+
+	.post-thumbnail {
+		margin-bottom: 0;
+		overflow: hidden;
+		background-color: $themeColor1;
+
+		img {
+			display: block;
+			height: 100%;
+			object-fit: cover;
+			transition: 0.25s;
+		}
+
+		@include respond-to(md) {
+			width: 51.5%;
+		}
+
+		&:hover {
+			img {
+				transform: scale(1.05);
+				opacity: 0.75;
+			}
+		}
+	}
+
+	.mpa-post-title {
+		margin-bottom: 0;
+		font-size: 33px;
+		line-height: 1.15;
+
+		a {
+			text-decoration: none;
+		}
+	}
+
+	.mpa-employee-content-wrap {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+
+		@include respond-to(md) {
+			width: 48.5%;
+		}
+	}
+
+	.mpa-employee-content {
+		padding: 40px 42px 0;
+		margin-bottom: 20px;
+		display: flex;
+		flex-direction: column;
+	}
+
+	.entry-excerpt {
+		order: 4;
+	}
+
+	.entry-link {
+
+		@extend .button-creative;
+		@extend button;
+
+		background: linear-gradient($themeColor4, $themeColor4) no-repeat;
+		background-size: 50% 100%;
+		display: inline-block;
+		padding: 1em 2em;
+		text-decoration: none;
+
+		&:hover {
+			background-color: transparent;
+		}
+	}
+
+	.mpa-employee-social-networks {
+		order: 3;
+
+		li {
+			margin-right: 12px;
+		}
+	}
+
+	.mpa-employee-additional-info {
+		order: 2;
+		margin: 0;
+	}
+}

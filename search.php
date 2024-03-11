@@ -10,24 +10,24 @@
 get_header();
 ?>
 
-	<main id="primary" class="site-main">
+    <main id="primary" class="site-main">
 
 		<?php if ( have_posts() ) : ?>
 
-			<header class="page-header">
-                <div class="page-header-info">
-                    <h1 class="page-title">
-                        <?php
-                        /* translators: %s: search query. */
-                        printf( esc_html__( 'Search Results for: %s', 'bro-barbershop' ), '<span>' . get_search_query() . '</span>' );
-                        ?>
-                    </h1>
-                </div>
+        <header class="page-header">
+            <div class="page-header-info">
+                <h1 class="page-title">
+					<?php
+					/* translators: %s: search query. */
+					printf( esc_html__( 'Search Results for: %s', 'bro-barbershop' ), '<span>' . get_search_query() . '</span>' );
+					?>
+                </h1>
+            </div>
 
-                <?php bro_barbershop_header_image(); ?>
-			</header><!-- .page-header -->
+			<?php bro_barbershop_header_image(); ?>
+        </header><!-- .page-header -->
 
-            <div class="posts-wrapper">
+        <div class="posts-wrapper">
 
 			<?php
 			/* Start the Loop */
@@ -43,16 +43,16 @@ get_header();
 
 			endwhile;
 
-            bro_barbershop_posts_pagination();
+			bro_barbershop_posts_pagination();
 
-		else :
+			else :
 
-			get_template_part( 'template-parts/content', 'none' );
+				get_template_part( 'template-parts/content', 'none' );
 
-		endif;
-		?>
+			endif;
+			?>
         </div>
-	</main><!-- #main -->
+    </main><!-- #main -->
 
 <?php
 get_footer();

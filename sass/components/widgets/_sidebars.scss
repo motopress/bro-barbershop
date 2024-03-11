@@ -1,0 +1,58 @@
+.main-sidebar {
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 100;
+	width: 100%;
+	max-width: 540px;
+	padding: 0 40px 40px;
+	overflow: auto;
+	color: $themeColor4;
+	background: $themeColor1;
+	transition: 0.3s;
+	transform: translateX(100%);
+
+	&.opened {
+		transform: none;
+	}
+
+	.admin-bar & {
+		top: 32px;
+	}
+
+	.close-sidebar {
+		position: absolute;
+		top: 42px;
+		right: 40px;
+		z-index: 9;
+		padding: 0;
+		background-color: transparent;
+		transition: 0.25s;
+
+		path {
+			transition: 0.25s;
+			fill: $themeColor6;
+		}
+
+		svg {
+			transition: .25s;
+		}
+
+		&:hover {
+			svg {
+				transform: rotate(90deg);
+			}
+		}
+	}
+
+	.widget-title {
+		@extend h3;
+
+		display: block;
+		margin: 0 -40px 35px;
+		padding: 35px 40px 35px 35px;
+		color: #fff;
+		background: $themeColor2;
+	}
+}

@@ -1,29 +1,29 @@
 .block-editor-block-list__block[data-type="core/pullquote"] {
-    &[data-align="left"],
-    &[data-align="right"] {
-        & p {
+	&[data-align="left"],
+	&[data-align="right"] {
+		& p {
 
-        }
-    }
+		}
+	}
 }
 
 .wp-block-pullquote {
 
-    blockquote{
+	blockquote {
 
-        .block-editor-rich-text p {
+		.block-editor-rich-text p {
 
-        }
-    }
+		}
+	}
 
-    .wp-block-pullquote__citation {
+	.wp-block-pullquote__citation {
 
-    }
+	}
 
-    &.is-style-solid-color {
+	&.is-style-solid-color {
 
-        .wp-block-pullquote__citation {
+		.wp-block-pullquote__citation {
 
-        }
-    }
+		}
+	}
 }

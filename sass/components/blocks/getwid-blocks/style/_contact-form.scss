@@ -1,0 +1,62 @@
+.wp-block-getwid-contact-form {
+	@include respond-to(sm) {
+		&__form {
+			display: grid;
+			grid-template-columns: auto auto;
+			grid-template-rows: repeat(3, auto);
+			grid-column-gap: 24px;
+			grid-row-gap: 0;
+		}
+
+		.wp-block-getwid-field-textarea {
+			grid-column: 1 / span 2;
+		}
+	}
+
+	.wp-block-getwid-field-name,
+	.wp-block-getwid-field-email,
+	.wp-block-getwid-field-textarea {
+		margin-bottom: 20px;
+	}
+
+	.wp-block-getwid-field-textarea {
+		textarea {
+			height: 185px;
+		}
+	}
+
+	.wp-block-getwid-contact-form__result {
+
+		&.success {
+
+		}
+
+		&.fail {
+
+		}
+	}
+
+	.wp-block-getwid-contact-form__submit {
+		margin-top: 8px;
+
+		.wp-block-button {
+
+			&__link {
+				@extend .button-creative;
+
+				position: relative;
+				z-index: 9;
+
+				&:after {
+					background-color: $themeColor2 !important;
+				}
+			}
+		}
+	}
+
+	&.is-style-dark-mode {
+		label {
+			color: $themeColor6;
+		}
+	}
+}

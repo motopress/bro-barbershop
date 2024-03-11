@@ -1,0 +1,84 @@
+.mpa-service-categories-shortcode {
+	.entry-title {
+		@extend h3;
+
+		margin-top: 0;
+		margin-bottom: 10px;
+	}
+
+	.mpa-grid {
+
+		&.mpa-grid-columns-3 {
+			.mpa-grid-column {
+
+			}
+		}
+	}
+
+	.mpa-grid-column {
+
+		&:first-child {
+			.mpa-loop-term-wrapper:before {
+
+			}
+		}
+
+		&:nth-child(2) {
+			.mpa-loop-term-wrapper:before {
+
+			}
+		}
+
+	}
+
+	.mpa-loop-term-wrapper {
+
+		> * {
+
+		}
+
+		&::before {
+
+		}
+
+		&::after {
+
+		}
+
+
+		&:hover {
+			&::after {
+
+			}
+
+			&::before {
+
+			}
+
+			.entry-title a {
+
+			}
+		}
+	}
+
+	.entry-title {
+
+		a {
+			&:hover {
+
+			}
+		}
+	}
+
+	.post-thumbnail {
+		margin-bottom: 10px;
+
+		img {
+			display: block;
+		}
+	}
+
+	.title-decor {
+
+	}
+}

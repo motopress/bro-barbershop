@@ -2,12 +2,12 @@
 // color classes if colors are not applied
 
 :root {
-    @each $color, $hex in $colors {
-        .has-#{$color}-color {
-            color: $hex;
-        }
-        .has-#{$color}-background-color {
-            background-color: $hex;
-        }
-    }
+	@each $color, $hex in $colors {
+		.has-#{$color}-color {
+			color: $hex;
+		}
+		.has-#{$color}-background-color {
+			background-color: $hex;
+		}
+	}
 }

@@ -1,174 +1,179 @@
 .comment-content a {
-    word-wrap: break-word;
+	word-wrap: break-word;
 }
 
 .bypostauthor {
-    display: block;
+	display: block;
 }
 
 .comments-area {
-    max-width: 920px;
-    margin: 0 auto;
+	max-width: 920px;
+	margin: 0 auto;
 
-    .comments-title {
-        margin-bottom: 40px;
-    }
+	.comments-title {
+		margin-bottom: 40px;
+	}
 
-    .no-comments {
-        padding: 30px;
-        margin-top: 20px;
-        background: $themeColor4;
-        color: $themeColor6;
-    }
+	.no-comments {
+		padding: 30px;
+		margin-top: 20px;
+		background: $themeColor4;
+		color: $themeColor6;
+	}
 
-    .comment-list {
-        padding: 0;
-        margin: 0;
-        list-style: none;
-    }
+	.comment-list {
+		padding: 0;
+		margin: 0;
+		list-style: none;
 
-    ol.children {
-        padding-left: 5%;
-        margin-top: 30px;
-        list-style: none;
+		li {
+			margin-bottom: 30px;
+		}
+	}
 
-        @include respond-to(smmax) {
-            margin-left: 0;
-        }
+	ol.children {
+		padding-left: 5%;
+		margin-top: 30px;
+		list-style: none;
 
-        @include respond-to(md) {
-            padding-left: 12%;
-        }
-    }
+		@include respond-to(smmax) {
+			margin-left: 0;
+		}
 
-    .comment-body {
-        position: relative;
-        padding: 25px;
-        background-color: #fff;
+		@include respond-to(md) {
+			padding-left: 12%;
+		}
+	}
 
-        + .comment-respond {
-            margin-top: 30px;
-            @include respond-to(md) {
-                margin-top: 60px;
-            }
-        }
-    }
+	.comment-body {
+		position: relative;
+		padding: 25px;
+		background-color: #fff;
 
-    .comment-meta {
-        position: relative;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        min-height: 66px;
-        margin-bottom: 15px;
+		+ .comment-respond {
+			margin-top: 30px;
+			@include respond-to(md) {
+				margin-top: 60px;
+			}
+		}
+	}
 
-        @include respond-to(md) {
-            padding-left: 90px;
-        }
+	.comment-meta {
+		position: relative;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		min-height: 66px;
+		margin-bottom: 15px;
 
-        .says {
-            display: none;
-        }
-    }
+		@include respond-to(md) {
+			padding-left: 90px;
+		}
 
-    .comment-metadata {
-        font-size: 15px;
+		.says {
+			display: none;
+		}
+	}
 
-        a {
-            color: $themeColor4;
-        }
+	.comment-metadata {
+		font-size: 15px;
 
-        .edit-link {
-            display: inline;
-            margin-left: 15px;
-        }
-    }
+		a {
+			color: $themeColor4;
+		}
 
-    .comment-author {
-        margin-bottom: 6px;
+		.edit-link {
+			display: inline;
+			margin-left: 15px;
+		}
+	}
 
-        .avatar {
-            display: block;
-            margin-bottom: 15px;
-            border-radius: 50%;
+	.comment-author {
+		margin-bottom: 6px;
 
-            @include respond-to(md) {
-                position: absolute;
-                top: 0;
-                left: 0;
-                margin-bottom: 0;
-            }
-        }
+		.avatar {
+			display: block;
+			margin-bottom: 15px;
+			border-radius: 50%;
 
-        .fn {
-            font-weight: 500;
-            color: $themeColor1;
+			@include respond-to(md) {
+				position: absolute;
+				top: 0;
+				left: 0;
+				margin-bottom: 0;
+			}
+		}
 
-            a {
-                color: inherit;
+		.fn {
+			font-weight: 500;
+			color: $themeColor1;
 
-                &:focus,
-                &:hover {
-                    color: $themeColor2;
-                    text-decoration: none;
-                }
-            }
-        }
-    }
+			a {
+				color: inherit;
 
-    .reply {
-        position: relative;
-        margin-top: 20px;
+				&:focus,
+				&:hover {
+					color: $themeColor2;
+					text-decoration: none;
+				}
+			}
+		}
+	}
 
-        @include respond-to(md) {
-            position: absolute;
-            top: 30px;
-            right: 28px;
-            margin-top: 0;
-        }
-    }
+	.reply {
+		position: relative;
+		margin-top: 20px;
 
-    .comment-form {
-        display: flex;
-        flex-wrap: wrap;
-        padding: 30px;
-        column-gap: 30px;
-        color: #fff;
-        background-color: $themeColor1;
-    }
+		@include respond-to(md) {
+			position: absolute;
+			top: 30px;
+			right: 28px;
+			margin-top: 0;
+		}
+	}
 
-    .comment-form-email,
-    .comment-form-author {
-        width: 100%;
-        @include respond-to(md) {
-            width: calc((100% - 30px) / 2);
-        }
-    }
+	.comment-form {
+		display: flex;
+		flex-wrap: wrap;
+		padding: 30px;
+		column-gap: 30px;
+		color: #fff;
+		background-color: $themeColor1;
+	}
 
-    .comment-form-comment,
-    .comment-form-cookies-consent {
-        width: 100%;
-    }
+	.comment-form-email,
+	.comment-form-author {
+		width: 100%;
+		@include respond-to(md) {
+			width: calc((100% - 30px) / 2);
+		}
+	}
 
-    .comment-respond {
-        margin-top: 100px;
-    }
+	.comment-form-comment,
+	.comment-form-cookies-consent {
+		width: 100%;
+	}
 
-    .form-submit {
-        margin-bottom: 0;
-        // @extend .button-creative;
+	.comment-respond {
+		margin-top: 100px;
+	}
 
-        &:hover {
+	.form-submit {
+		margin-bottom: 0;
 
-            input[type="submit"] {
-                background-color: $themeColor4;
-            }
-        }
-    }
+		input[type="submit"] {
+			@extend .button-creative;
 
-    .comment-reply-title {
-        small {
-            margin-left: 15px;
-        }
-    }
+			&:hover {
+				background-color: transparent;
+			}
+
+		}
+	}
+
+	.comment-reply-title {
+		small {
+			margin-left: 15px;
+		}
+	}
 }

@@ -1,31 +1,31 @@
 .wp-block-query-pagination {
-    margin-top: 2em;
-    text-align: center;
+	margin-top: 2em;
+	text-align: center;
 
-    a {
-        text-decoration: none;
-    }
+	a {
+		text-decoration: none;
+	}
 
-    .page-numbers {
-        margin: 0 5px;
-        color: $themeColor1;
+	.page-numbers {
+		margin: 0 5px;
+		color: $themeColor1;
 
-        &.current,
-        &:focus,
-        &:hover {
-            color: $themeColor2;
-        }
-    }
+		&.current,
+		&:focus,
+		&:hover {
+			color: $themeColor2;
+		}
+	}
 
-    .wp-block-query-pagination-numbers {
+	.wp-block-query-pagination-numbers {
 
-    }
+	}
 
-    .wp-block-query-pagination-previous {
+	.wp-block-query-pagination-previous {
 
-    }
+	}
 
-    .wp-block-query-pagination-next {
+	.wp-block-query-pagination-next {
 
-    }
+	}
 }

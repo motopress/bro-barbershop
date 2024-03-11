@@ -1,28 +1,28 @@
 .wp-block-file {
 
-    &.aligncenter {
+	&.aligncenter {
 
-    }
+	}
 
-    &.alignright {
+	&.alignright {
 
-    }
+	}
 
-    .wp-block-file__button {
+	.wp-block-file__button {
 
-    }
+	}
 
-    a.wp-block-file__button {
+	a.wp-block-file__button {
 
-        &:hover,
-        &:visited,
-        &:focus,
-        &:active {
+		&:hover,
+		&:visited,
+		&:focus,
+		&:active {
 
-        }
-    }
+		}
+	}
 
-    * + .wp-block-file__button {
+	* + .wp-block-file__button {
 
-    }
+	}
 }

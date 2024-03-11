@@ -1,18 +1,18 @@
 .site-footer {
-    padding: 0 20px;
-    color: $themeColor4;
-    background-color: $themeColor1;
+	padding: 0 20px;
+	color: $themeColor4;
+	background-color: $themeColor1;
 
-    &-inner {
-        max-width: 1400px;
-        margin: 0 auto;
-    }
+	&-inner {
+		max-width: 1400px;
+		margin: 0 auto;
+	}
 
-    .site-info {
-        padding: 50px 0;
-        font-size: 0.9375em;
-        font-weight: 500;
-        color: $themeColor4;
-        text-align: center;
-    }
+	.site-info {
+		padding: 50px 0;
+		font-size: 0.9375em;
+		font-weight: 500;
+		color: $themeColor4;
+		text-align: center;
+	}
 }

@@ -1,47 +1,47 @@
 .wp-block-search {
 
-    .wp-block-search__label {
+	.wp-block-search__label {
 
-    }
+	}
 
-    .wp-block-search__input {
-        border-color: $themeColor1;
-    }
+	.wp-block-search__input {
+		border-color: $themeColor1;
+	}
 
-    .wp-block-search__button {
+	.wp-block-search__button {
 
-        &:hover,
-        &:focus,
-        &:active,
-        &:visited {
-            background-color: $themeColor1;
-        }
+		&:hover,
+		&:focus,
+		&:active,
+		&:visited {
+			background-color: $themeColor1;
+		}
 
-        .search-icon {
-            display: block;
-            fill: $themeColor6;
-        }
-    }
+		.search-icon {
+			display: block;
+			fill: $themeColor6;
+		}
+	}
 
-    &.wp-block-search__button-inside {
+	&.wp-block-search__button-inside {
 
-        .wp-block-search__inside-wrapper {
-            border: 0;
-            position: relative;
-            padding: 0;
+		.wp-block-search__inside-wrapper {
+			border: 0;
+			position: relative;
+			padding: 0;
 
-            .wp-block-search__input {
-                padding: 12px 18px;
-            }
+			.wp-block-search__input {
+				padding: 12px 18px;
+			}
 
-            .wp-block-search__button {
-                position: absolute;
-                top: 5px;
-                right: 5px;
-                bottom: 5px;
-                padding: 8px 18px;
-                margin: 0;
-            }
-        }
-    }
+			.wp-block-search__button {
+				position: absolute;
+				top: 5px;
+				right: 5px;
+				bottom: 5px;
+				padding: 8px 18px;
+				margin: 0;
+			}
+		}
+	}
 }

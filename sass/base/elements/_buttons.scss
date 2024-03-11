@@ -3,23 +3,34 @@ a.more-link,
 input[type="button"],
 input[type="reset"],
 input[type="submit"] {
-    display: inline-block;
-    padding: 0.75em 1em;
-    font-size: 1em;
-    line-height: 1.5;
-    font-weight: 500;
-    text-transform: uppercase;
-    text-decoration: none;
-    cursor: pointer;
-    border: 0;
-    transition: 0.3s;
-    background-color: $themeColor2;
-    color: $themeColor6;
+	display: inline-block;
+	position: relative;
+	padding: 1em 2em;
+	font-size: 1rem;
+	line-height: 1.5;
+	font-weight: 500;
+	text-transform: uppercase;
+	text-decoration: none;
+	cursor: pointer;
+	border: 0;
+	transition: 0.3s;
+	background-color: $themeColor2;
+	color: $themeColor6;
+	z-index: 1;
+	letter-spacing: .5px;
 
-    &:hover,
-    &:active,
-    &:focus {
-        background-color: $themeColor1;
-        text-decoration: none;
-    }
+	background-color: $themeColor2;
+	color: $themeColor6;
+
+	&:hover,
+	&:active,
+	&:focus {
+		background-color: $themeColor1;
+		text-decoration: none;
+	}
+
+	&:not(.button-creative) {
+
+	}
 }
+

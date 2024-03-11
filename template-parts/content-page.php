@@ -10,22 +10,23 @@
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-	<header class="entry-header page-header">
+    <header class="entry-header page-header">
         <div class="page-header-info">
-            <?php
-            the_title( '<h1 class="entry-title">', '</h1>' );
-            ?>
+			<?php
+			the_title( '<h1 class="entry-title">', '</h1>' );
+			?>
         </div>
-        <?php
-            if (has_post_thumbnail()) {
-            bro_barbershop_post_thumbnail();
-            } else {
-            bro_barbershop_header_image();
-            }
-        ?>
+		<?php
+		if ( has_post_thumbnail() ) {
+			bro_barbershop_post_thumbnail( 'bro-barbershop-x-large' );
+		} else {
+			bro_barbershop_header_image();
+		}
+		bro_barbershop_breadcrumbs();
+		?>
     </header><!-- .entry-header -->
 
-	<div class="entry-content">
+    <div class="entry-content">
 		<?php
 		the_content();
 
@@ -36,15 +37,15 @@
 			)
 		);
 		?>
-	</div><!-- .entry-content -->
+    </div><!-- .entry-content -->
 
 	<?php if ( get_edit_post_link() ) : ?>
-		<footer class="entry-footer">
+        <footer class="entry-footer">
 			<?php
 			edit_post_link(
 				sprintf(
 					wp_kses(
-						/* translators: %s: Name of current post. Only visible to screen readers */
+					/* translators: %s: Name of current post. Only visible to screen readers */
 						__( 'Edit <span class="screen-reader-text">%s</span>', 'bro-barbershop' ),
 						array(
 							'span' => array(
@@ -58,6 +59,6 @@
 				'</span>'
 			);
 			?>
-		</footer><!-- .entry-footer -->
+        </footer><!-- .entry-footer -->
 	<?php endif; ?>
 </article><!-- #post-<?php the_ID(); ?> -->

@@ -1,59 +1,59 @@
 p {
-    margin-top: 0;
-    margin-bottom: 1.5em;
+	margin-top: 0;
+	margin-bottom: 1.5em;
 
-    &:last-child {
-        margin-bottom: 0;
-    }
+	&:last-child {
+		margin-bottom: 0;
+	}
 }
 
 dfn,
 cite,
 em,
 i {
-    font-style: italic;
+	font-style: italic;
 }
 
 blockquote {
-    @extend .wp-block-quote;
+	@extend .wp-block-quote;
 
-    margin: 0 1.5em;
+	margin: 0 1.5em;
 }
 
 
 address {
-    margin: 0 0 1.5em;
+	margin: 0 0 1.5em;
 }
 
 pre {
-    background: $color__background-pre;
-    font-family: $font__pre;
-    line-height: $font__line-height-pre;
-    margin-bottom: 1.6em;
-    overflow: auto;
-    padding: 1.6em;
-    border: 1px solid $themeColor5;
+	background: $color__background-pre;
+	font-family: $font__pre;
+	line-height: $font__line-height-pre;
+	margin-bottom: 1.6em;
+	overflow: auto;
+	padding: 1.6em;
+	border: 1px solid $themeColor5;
 }
 
 code,
 kbd,
 tt,
 var {
-    font-family: $font__code;
+	font-family: $font__code;
 }
 
 abbr,
 acronym {
-    cursor: help;
-    border-bottom: 1px dotted #666;
+	cursor: help;
+	border-bottom: 1px dotted #666;
 }
 
 mark,
 ins {
-    text-decoration: none;
-    background: $color__background-ins;
+	text-decoration: none;
+	background: $color__background-ins;
 }
 
 big {
-    font-size: 125%;
+	font-size: 125%;
 }

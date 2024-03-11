@@ -1,0 +1,43 @@
+.mpa-customer-account-shortcode {
+
+	a {
+		text-decoration: none;
+		color: inherit;
+
+		&:hover {
+			color: $themeColor2;
+		}
+	}
+
+	.mpa-account-menu li {
+		margin-right: 1em;
+
+		a {
+			font-weight: 500;
+			font-size: 20px;
+		}
+	}
+
+	.label {
+		display: inline-block;
+		min-width: 150px;
+		font-weight: 500;
+	}
+
+	.mpa-customer-details {
+		padding: 10px 0;
+		border-bottom: 1px solid $themeColor5;
+	}
+
+	.mpa-booking-details,
+	.reservation-details {
+		> * {
+			padding: 10px 0;
+			border-bottom: 1px solid $themeColor5;
+		}
+	}
+
+	.booking-reservations {
+		border-top: 1px solid $themeColor1;
+	}
+}

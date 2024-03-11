@@ -1,0 +1,65 @@
+.wp-block-getwid-counter {
+
+	.wp-block-getwid-counter__wrapper {
+
+		.wp-block-getwid-counter__prefix,
+		.wp-block-getwid-counter__suffix {
+
+		}
+
+		.wp-block-getwid-counter__suffix {
+			text-transform: uppercase;
+			font-size: 16px;
+			font-weight: 500;
+			padding-top: 22px;
+		}
+
+		.wp-block-getwid-counter__prefix {
+
+		}
+
+		.wp-block-getwid-counter__number {
+			line-height: 1;
+		}
+	}
+
+	&.is-style-crossed-left,
+	&.is-style-crossed-right {
+
+		.wp-block-getwid-counter__number {
+			position: relative;
+			font-size: 72px;
+			font-weight: 700;
+
+			&:after {
+				content: '';
+				width: 96px;
+				height: 10px;
+				background-color: $themeColor2;
+				position: absolute;
+				top: 0;
+				bottom: 0;
+				margin: auto;
+				right: 0;
+				left: 0;
+				z-index: -1;
+			}
+		}
+	}
+
+	&.is-style-crossed-left {
+		.wp-block-getwid-counter__number {
+			&:after {
+				transform: rotate(15deg);
+			}
+		}
+	}
+
+	&.is-style-crossed-right {
+		.wp-block-getwid-counter__number {
+			&:after {
+				transform: rotate(-15deg);
+			}
+		}
+	}
+}

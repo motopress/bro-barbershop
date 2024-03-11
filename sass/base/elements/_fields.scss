@@ -17,16 +17,15 @@ textarea,
 select {
 	display: block;
 	width: 100%;
-	padding: 12px 18px;
+	padding: 10px 18px;
 	font-weight: 500;
-	line-height: 29px;
 	color: $themeColor1;
 	background-color: $themeColor6;
 	border: 1px solid $themeColor5;
 	border-radius: 0;
 
 	&:focus {
-		color: $color__text-input-focus;
+		outline: auto;
 	}
 }
 
@@ -41,7 +40,7 @@ select {
 
 label {
 	display: inline-block;
-	margin-bottom: 10px;
+	margin-bottom: 5px;
 }
 
 [type="checkbox"], [type="radio"] {

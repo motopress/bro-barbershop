@@ -1,0 +1,56 @@
+.wp-block-getwid-tabs {
+
+	&__title-wrapper {
+		a {
+			text-decoration: none;
+		}
+	}
+
+	.wp-block-getwid-tabs__nav-links {
+
+		.wp-block-getwid-tabs__nav-link {
+
+			&:hover {
+
+			}
+
+			&.ui-tabs-active {
+
+			}
+
+			a {
+
+			}
+		}
+	}
+
+	.wp-block-getwid-tabs__tab-content {
+		background-color: #fff;
+	}
+
+	&.has-layout-vertical-left,
+	&.has-layout-vertical-right,
+	&.is-style-vertical {
+
+		.wp-block-getwid-tabs__nav-links {
+
+			.wp-block-getwid-tabs__nav-link {
+
+			}
+		}
+
+		.wp-block-getwid-tabs__tab-content {
+
+		}
+	}
+
+	&.has-layout-vertical-right {
+
+		.wp-block-getwid-tabs__nav-links {
+
+			.wp-block-getwid-tabs__nav-link {
+
+			}
+		}
+	}
+}

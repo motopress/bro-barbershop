@@ -1,31 +1,31 @@
 a {
-    color: $themeColor2;
-    text-decoration: none;
-    transition: 0.3s;
+	color: $themeColor2;
+	text-decoration: none;
+	transition: 0.3s;
 
-    &:hover,
-    &:focus,
-    &:active {
-        text-decoration: underline;
-    }
+	&:hover,
+	&:focus,
+	&:active {
+		text-decoration: underline;
+	}
 
-    &:focus {
-        outline: thin dotted;
-    }
+	&:focus {
+		outline: thin dotted;
+	}
 
-    &:hover,
-    &:active {
-        outline: 0;
-    }
+	&:hover,
+	&:active {
+		outline: 0;
+	}
 
-    .entry-content &,
-    .comment-content & {
-        &:where(:not(.wp-element-button, .wp-block-button__link)) {
-            text-decoration: underline;
+	.entry-content &,
+	.comment-content & {
+		&:where(:not(.wp-element-button, .wp-block-button__link)) {
+			text-decoration: underline;
 
-            &:hover {
-                text-decoration: none;
-            }
-        }
-    }
+			&:hover {
+				text-decoration: none;
+			}
+		}
+	}
 }

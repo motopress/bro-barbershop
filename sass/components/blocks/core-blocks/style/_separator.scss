@@ -1,17 +1,23 @@
-.wp-block-separator{
+.wp-block-separator {
+	border-bottom: 0;
+	background: transparent;
 
-    &:not(.is-style-wide):not(.is-style-dots){
+	&.has-background {
+		border: 0;
+	}
 
-    }
+	&:not(.is-style-wide):not(.is-style-dots) {
 
-    &.is-style-wide{
+	}
 
-    }
+	&.is-style-wide {
 
-    &.is-style-dots{
+	}
 
-        &:before{
+	&.is-style-dots {
 
-        }
-    }
+		&:before {
+
+		}
+	}
 }

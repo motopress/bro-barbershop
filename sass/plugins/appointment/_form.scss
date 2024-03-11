@@ -1,0 +1,736 @@
+.mpa-widget.appointment-form-widget > .widget-body,
+.mpa-shortcode.appointment-form-shortcode {
+	color: $themeColor6;
+
+	.mpa-booking-step {
+		width: 100%;
+
+		.mpa-shortcode-title {
+			@extend h4;
+
+			color: $themeColor6;
+			margin-bottom: 28px;
+		}
+	}
+
+	input[type=text],
+	input[type=email],
+	input[type=tel],
+	textarea {
+		background-color: $themeColor5;
+	}
+
+	.mpa-service-category,
+	.mpa-service,
+	.mpa-location,
+	.mpa-employee {
+		padding-left: 45px;
+		background-position: center left 15px, center right 18px;
+		background-color: $themeColor5;
+	}
+
+	.mpa-service-category {
+		background-image: url("images/head.svg"), url("images/icon-angle-down.svg");
+	}
+
+	.mpa-service {
+		background-image: url("images/scissors.svg"), url("images/icon-angle-down.svg");
+	}
+
+	.mpa-location {
+		background-image: url("images/marker.svg"), url("images/icon-angle-down.svg");
+	}
+
+	.mpa-employee {
+		background-image: url("images/user.svg"), url("images/icon-angle-down.svg");
+	}
+
+	.mpa-customer-name,
+	.mpa-customer-email,
+	.mpa-customer-phone {
+		padding-left: 45px;
+		background-position: center left 15px;
+		background-repeat: no-repeat;
+	}
+
+	.mpa-customer-name {
+		background-image: url("images/user.svg");
+	}
+
+	.mpa-customer-email {
+		background-image: url("images/envelope.svg");
+	}
+
+	.mpa-actions {
+		display: flex;
+		flex-direction: row-reverse;
+		justify-content: flex-end;
+		margin-top: 35px;
+		margin-bottom: 0;
+	}
+
+	.mpa-button-back {
+		background-color: transparent;
+		padding: 0;
+		color: $themeColor4;
+
+		&:hover {
+			color: $themeColor6;
+		}
+	}
+
+	.mpa-button-next {
+		@extend .button-creative;
+
+		margin-right: 15px;
+	}
+
+	.mpa-booking-step-period {
+		.mpa-input-container {
+			flex-wrap: wrap;
+			margin: 0;
+
+			.mpa-input-wrapper {
+				width: 100%;
+				padding: 0;
+			}
+		}
+
+		.mpa-time-wrapper {
+
+			.mpa-times {
+				position: static;
+				max-height: none;
+			}
+		}
+
+		.mpa-times {
+			.mpa-time-period {
+				padding: 6px 10px;
+				font-size: 15px;
+				border: 1px solid $themeColor6;
+				background: transparent;
+
+				&.mpa-time-period-selected,
+				&:focus,
+				&:hover {
+					background-color: $themeColor2;
+					border-color: $themeColor2;
+				}
+			}
+		}
+
+		.flatpickr-calendar {
+			width: 100%;
+			max-width: 100%;
+			margin: 0 !important;
+			overflow: hidden;
+			color: $themeColor6;
+			border: 0;
+			border-radius: 0;
+			box-shadow: none !important;
+			background-color: transparent;
+
+			.flatpickr-months {
+				position: relative;
+				background: $themeColor4;
+			}
+
+			.flatpickr-month {
+				height: 53px;
+			}
+
+			.flatpickr-current-month {
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				height: 53px;
+				padding: 12px 0;
+
+				.cur-year,
+				.cur-month {
+					margin: 0;
+					font-weight: 400;
+					color: $themeColor6;
+
+					&:hover,
+					&:focus {
+						background: transparent;
+					}
+				}
+
+				.numInputWrapper {
+					padding: 0;
+
+					&:hover,
+					&:focus {
+						background: transparent;
+					}
+				}
+			}
+
+			.flatpickr-next-month,
+			.flatpickr-prev-month {
+				height: 100%;
+				padding: 0 15px;
+				font-size: 20px;
+				line-height: 53px;
+				color: $themeColor6;
+				fill: $themeColor1;
+				transition: .25s;
+
+				&:hover {
+					color: $themeColor2;
+					opacity: 1;
+				}
+
+				&::before {
+					font-family: "Font Awesome 5 Free";
+					font-weight: 900;
+				}
+
+				svg {
+					display: none;
+				}
+			}
+
+			.flatpickr-next-month {
+				&::before {
+					content: fa-content($fa-var-angle-right);
+				}
+			}
+
+
+			.flatpickr-prev-month {
+				&::before {
+					content: fa-content($fa-var-angle-left);
+				}
+			}
+
+			.flatpickr-rContainer {
+				display: block;
+				width: 100%;
+				font-size: 1em;
+				line-height: 54px;
+			}
+
+			.flatpickr-weekdays {
+				height: auto;
+			}
+
+			.dayContainer {
+				width: 100%;
+				min-width: 100%;
+				max-width: 100%;
+			}
+
+			.flatpickr-days {
+				width: 100%;
+			}
+
+			.flatpickr-weekday {
+				height: 54px;
+				font-size: inherit;
+				font-weight: 400;
+				line-height: 54px;
+				color: inherit;
+				border-bottom: 1px solid #E1E1E1;
+			}
+
+			.flatpickr-day {
+				position: relative;
+				z-index: 1;
+				width: auto;
+				max-width: none;
+				height: 54px;
+				line-height: 54px;
+				color: inherit;
+				background: transparent;
+				border-top: 0;
+				border-right: 0;
+				border-bottom: 1px solid #E1E1E1;
+				border-left: 0;
+				border-radius: 0;
+
+				&.flatpickr-disabled {
+					color: #A7B4B6;
+					text-decoration: line-through;
+
+					&::before {
+						display: none;
+					}
+
+					&:hover {
+						color: #8F908A;
+					}
+				}
+
+				&::before {
+					position: absolute;
+					top: 50%;
+					left: 50%;
+					z-index: -1;
+					display: block;
+					width: 36px;
+					height: 36px;
+					color: $themeColor6;
+					content: '';
+					background: $themeColor2;
+					border-radius: 50%;
+					opacity: 0;
+					transform: translate(-50%, -50%);
+				}
+
+				&.selected,
+				&:hover,
+				&:focus {
+					&::before {
+						opacity: 1;
+					}
+				}
+			}
+		}
+	}
+
+	.mpa-booking-step-cart {
+		.mpa-cart {
+			.mpa-cart-item {
+				margin-bottom: 25px;
+				color: $themeColor2;
+				background: transparent;
+
+				&:last-child {
+					margin-bottom: 0;
+				}
+			}
+
+			.opened {
+				.item-header {
+					border-bottom: 1px solid $themeColor6;
+				}
+
+				.item-body {
+					display: flex;
+				}
+
+				.item-toggle {
+					span {
+						&:last-child {
+							opacity: 0;
+						}
+					}
+				}
+			}
+
+			.item-header {
+				position: relative;
+				padding: 20px 60px 20px 20px;
+				font-weight: 400;
+				border-bottom-color: transparent;
+
+				.cell {
+					width: 100%;
+					padding: 0;
+				}
+
+				.cell-service {
+					color: $themeColor6;
+				}
+
+				.cell-date {
+
+				}
+			}
+
+			.item-body {
+				display: none;
+
+				.cell {
+					padding: 0 20px 20px;
+				}
+
+				.cell-people {
+					order: -1;
+					width: 100%;
+				}
+
+				.cell-location {
+					width: 100%;
+				}
+
+				.cell-price,
+				.cell-employee {
+					@include respond-to(smmax) {
+						padding-bottom: 0;
+					}
+				}
+
+				.cell-value {
+
+				}
+			}
+
+			.cell-title {
+				margin-bottom: 2px;
+				font-weight: 400;
+				color: $themeColor6;
+			}
+
+			.item-actions {
+				position: absolute;
+				top: 20px;
+				right: 20px;
+				display: flex;
+				align-items: center;
+
+				.edit,
+				.remove {
+					width: 1.25em;
+					height: 25px;
+					padding: 0;
+					margin-right: 10px;
+					overflow: hidden;
+					font-size: 18px;
+					color: $themeColor6;
+					text-align: center;
+					background: transparent;
+					border-radius: 0;
+
+					&:focus,
+					&:hover {
+						color: $themeColor2;
+						outline: none;
+					}
+
+					&::before {
+						display: inline-block;
+						font-family: "Font Awesome 5 Free";
+					}
+				}
+
+				.remove {
+					&::before {
+						content: "\f2ed";
+					}
+				}
+
+				.edit {
+					&::before {
+						content: "\f044";
+					}
+				}
+			}
+
+			.item-toggle {
+				position: relative;
+				width: 14px;
+				height: 14px;
+				padding: 0;
+				color: $themeColor6;
+				background: transparent;
+
+				&:focus,
+				&:hover {
+					outline: none;
+					background: transparent;
+
+					span {
+						background: $themeColor2;
+					}
+				}
+
+				span {
+					position: absolute;
+					background: $themeColor6;
+					transition: 0.3s;
+
+					&:first-child {
+						top: 50%;
+						left: 0;
+						width: 14px;
+						height: 2px;
+						transform: translateY(-50%);
+					}
+
+					&:last-child {
+						top: 0;
+						left: 50%;
+						width: 2px;
+						height: 14px;
+						transform: translateX(-50%);
+					}
+				}
+			}
+		}
+
+		.mpa-cart-total {
+			display: flex;
+			justify-content: space-between;
+			margin: 20px 0;
+			font-size: 24px;
+		}
+
+		.mpa-cart-total-price {
+
+		}
+
+		.mpa-button-new {
+			margin-left: 15px;
+			background-color: transparent;
+			padding: 0;
+			color: $themeColor4;
+
+			&:hover {
+				color: $themeColor6;
+			}
+		}
+	}
+
+	.mpa-checkout-section {
+		margin-bottom: 40px;
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+
+	.mpa-booking-step-checkout {
+
+		.mpa-checkout-form .iti {
+			color: $themeColor1;
+		}
+
+		.mpa-required-tip {
+			display: none;
+		}
+
+		.mpa-customer-create-account-description {
+			font-size: 1rem;
+			background: $themeColor3;
+			display: block;
+			padding: 10px 20px;
+			line-height: 1.25;
+		}
+	}
+
+	.mpa-deposit-section,
+	.mpa-order-details {
+
+		table {
+			padding: 15px;
+			color: inherit;
+			text-align: left;
+			border-collapse: collapse;
+			background: transparent;
+			border: 0;
+
+			tr {
+				border-bottom: 0;
+			}
+
+			th,
+			td {
+				padding: 10px 0;
+				font-weight: 500;
+				border-bottom: 1px solid $themeColor4;
+			}
+
+			tfoot {
+				th,
+				td {
+					border: 0;
+				}
+			}
+		}
+
+		.column-price {
+			text-align: right;
+
+			td {
+				padding-left: 10px;
+			}
+		}
+	}
+
+	.mpa-booking-step-payment {
+
+		.mpa-apply-coupon-button {
+			@extend .button-creative;
+		}
+
+		.mpa-billing-details {
+
+			.mpa-payment-gateways {
+				.mpa-payment-gateway-title {
+					font-size: 18px;
+				}
+
+				.mpa-billing-fields,
+				.mpa-payment-gateway-description {
+					margin: 10px 0 0;
+					font-size: 0.875em;
+				}
+			}
+		}
+
+		.mpa-billing-fields > * {
+			background: #fafafa;
+			padding: 1.25rem;
+			border-radius: .5em;
+			color: #404040;
+			margin-bottom: 10px;
+
+			&:last-child {
+				margin-bottom: 0;
+			}
+		}
+
+		.mpa-stripe-payment-container {
+
+			.mpa-stripe-payment-methods {
+
+				li {
+					padding: 0;
+					margin: 0 10px 10px 0;
+				}
+
+				.active {
+					label {
+						color: $themeColor2;
+					}
+				}
+			}
+		}
+
+		#mpa-deposit-table {
+			margin-bottom: 20px;
+		}
+	}
+
+	.mpa-booking-step-booking {
+
+		.mpa-message {
+			@extend h3;
+
+			position: relative;
+			padding: 35px 0 50px;
+			margin: 0;
+			color: $themeColor6;
+		}
+
+		.mpa-actions {
+			margin-top: 20px;
+
+			.button {
+				@extend .button-creative;
+				margin-bottom: 10px;
+			}
+		}
+	}
+
+	.iti__selected-flag,
+	.iti--allow-dropdown .iti__flag-container:hover .iti__selected-flag,
+	.iti--separate-dial-code .iti__selected-flag {
+		background: transparent;
+	}
+
+	.iti__country-list {
+		li {
+			margin: 0;
+		}
+	}
+}
+
+.mpa-widget.appointment-form-widget > .widget-body {
+	.iti__country-list {
+		font-size: 14px;
+	}
+}
+
+.mpa-widget.appointment-form-widget {
+	.widget-title {
+		margin: 0 -40px 40px;
+		padding: 40px;
+		color: $themeColor6;
+		background: $themeColor2;
+	}
+
+	.mpa-actions {
+
+		.button {
+
+			&:hover {
+
+			}
+
+			&[disabled] {
+				color: $themeColor4;
+				cursor: not-allowed;
+				background: $themeColor3;
+			}
+		}
+	}
+
+	.mpa-button-back {
+		color: $themeColor4;
+		background: transparent;
+		border: 1px solid $themeColor4;
+	}
+
+	.mpa-button-next {
+		color: $themeColor1;
+		background: $themeColor4;
+	}
+
+	.mpa-booking-step-cart {
+
+		.mpa-button-new {
+			color: $themeColor4;
+			background: transparent;
+			border: 1px solid $themeColor4;
+
+			&:hover {
+				color: $themeColor1;
+				background: $themeColor6;
+				border-color: $themeColor6;
+			}
+		}
+	}
+
+	.mpa-booking-step-period {
+		.mpa-input-container {
+			flex-wrap: wrap;
+			margin: 0;
+
+			.mpa-input-wrapper {
+				width: 100%;
+				padding: 0;
+			}
+		}
+
+		.mpa-time-wrapper {
+			margin-top: 25px;
+
+			.mpa-times {
+				position: static;
+				max-height: none;
+			}
+		}
+
+		.mpa-times {
+			.mpa-time-period {
+				color: $themeColor4;
+				background: transparent;
+				border: 1px solid $themeColor4;
+
+				&.mpa-time-period-selected,
+				&:focus,
+				&:hover {
+					color: $themeColor6;
+					background: $themeColor1;
+					border-color: $themeColor1;
+				}
+			}
+		}
+	}
+}
