@@ -6,9 +6,11 @@
 ![](https://img.shields.io/wordpress/theme/rating/bro-barbershop)
 ![](https://img.shields.io/wordpress/theme/last-updated/bro-barbershop)
 
-Exceptional [free WordPress appointment theme](https://wordpress.org/themes/bro-barbershop/) tailored for hair salons. Elevate the presentation of your hairdressing or barbershop venture with a touch of style. Craft an impressive portfolio showcasing your services, curate a high-concept blog, and enhance your online presence effortlessly. Seamlessly transform it into a versatile appointment booking theme suitable for various service businesses! Enjoy pre-styled Google Maps, captivating animations, video and image galleries, and more!
+Exceptional [free WordPress appointment theme](https://wordpress.org/themes/bro-barbershop/) tailored for hair salons, barbershops, nail technicians, tattoo masters, and other beauty professionals. Craft an impressive portfolio showcasing your services, curate a high-concept blog, and even accept bookings online with the automated appointment scheduling system. Use modern sliders, styled Google Maps, smooth animation effects, creative image galleries, and more awesome yet lightweight visuals - all with just one WordPress block theme for hair salons.
 
-This theme is equipped with the [MotoPress appointment booking plugin](https://wordpress.org/plugins/motopress-appointment-lite/), empowering you to effortlessly manage online bookings for your hairdressing salon. Revel in real-time availability calendars and automated appointment reminders. Personalize schedules for individual barbers, establish break and lunchtime slots, or lock out specific hours as needed. Whether selling hourly services or managing bookings across multiple locations, this professional WordPress hair salon theme consolidates it all into a cohesive and dynamic platform.
+Thanks to the [MotoPress appointment booking plugin](https://wordpress.org/plugins/motopress-appointment-lite/) included, use this hairstyling salon WordPress theme to accept and manage online bookings with real-time availability calendars, automated appointment reminders, and full-scale appointments management theme dashboard.
+
+Personalize schedules for individual barbers, establish break and lunchtime slots, or lock out specific hours as needed. Whether selling hourly services or managing bookings across multiple locations, this professional WordPress hair salon theme consolidates it all into a cohesive and dynamic platform for free!
 
 ## Available CLI commands
 Bro Barbershop comes packed with CLI commands tailored for WordPress theme development :
