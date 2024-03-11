@@ -27,9 +27,9 @@ function bro_barbershop_ocdi_import_files() {
 	return array(
 		array(
 			'import_file_name'             => 'Bro Barbershop Demo',
-			'local_import_file'            => 'https://raw.githubusercontent.com/motopress/bro-barbershop/master/assets/demo-data/bro-barbershop.xml',
-			'local_import_widget_file'     => 'https://raw.githubusercontent.com/motopress/bro-barbershop/assets/demo-data/bro-barbershop-widgets.wie',
-			'local_import_customizer_file' => 'https://raw.githubusercontent.com/motopress/bro-barbershop/assets/demo-data/bro-barbershop-customizer.dat',
+			'import_file_url'              => 'https://raw.githubusercontent.com/motopress/bro-barbershop/master/assets/demo-data/bro-barbershop.xml',
+			'import_widget_file_url'       => 'https://raw.githubusercontent.com/motopress/bro-barbershop/master/assets/demo-data/bro-barbershop-widgets.wie',
+			'import_customizer_file_url'   => 'https://raw.githubusercontent.com/motopress/bro-barbershop/master/assets/demo-data/bro-barbershop-customizer.dat',
 			'import_notice'                => $import_notice,
 		),
 	);
