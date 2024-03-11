@@ -1,0 +1,76 @@
+.wp-block-quote {
+    background-color: $themeColor1;
+    padding: 20px 40px 20px 110px;
+    color: $themeColor6;
+    position: relative;
+    font-size: 22px;
+    border-radius: 10px;
+
+    &:after {
+        content: '';
+        position: absolute;
+        width: 70px;
+        height: 1px;
+        background-color: #fff;
+        top: 37px;
+        left: 20px;
+    }
+
+    p {
+        margin-top: 0;
+
+        &:last-of-type {
+            margin-bottom: 0;
+        }
+    }
+
+    cite {
+        font-style: normal;
+        color: $themeColor2;
+        font-size: 18px;
+    }
+
+    &.is-style-large {
+        &:not(.is-style-plain) {
+            padding: 1em 2em 1em 5em;
+        }
+
+        p {
+
+        }
+
+        cite {
+
+        }
+
+        &:after {
+            top: 45px;
+        }
+    }
+
+    &.is-style-large:not(.is-style-plain),
+    &.is-style-large {
+
+        p {
+            font-size: 1.25em;
+            font-style: normal;
+        }
+
+        cite {
+            font-size: 1em;
+            font-style: normal;
+        }
+    }
+
+    &.is-style-plain {
+        padding: 1em;
+        background: transparent;
+        border: 1px solid $themeColor1;
+        font-size: 1em;
+        color: $themeColor5;
+
+        &:after {
+            display: none;
+        }
+    }
+}

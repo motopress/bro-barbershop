@@ -1,0 +1,112 @@
+.site-header {
+    position: relative;
+    max-width: $content-width-wide;
+    margin: 0 auto;
+
+    &-inner {
+        display: flex;
+        justify-content: space-between;
+        padding: 20px;
+        border-bottom: 1px solid $themeColor5;
+
+        @include respond-to(sm) {
+            padding-top: 42px;
+            padding-bottom: 42px;
+        }
+
+        @include respond-to(lg) {
+            padding-left: 0;
+            padding-right: 0;
+        }
+    }
+
+    .site-branding {
+        position: relative;
+        z-index: 10;
+        display: flex;
+        align-items: center;
+        padding-right: 20px;
+
+        .site-title {
+            margin: 0;
+            font-size: 32px;
+            font-weight: 700;
+            line-height: 30px;
+            word-wrap: break-word;
+
+            a {
+                color: $themeColor1;
+                text-decoration: none;
+            }
+        }
+    }
+
+    .custom-logo-link {
+        margin-right: 10px;
+
+        img {
+            display: block;
+        }
+    }
+
+    .menu-toggle {
+        position: relative;
+        z-index: 10;
+        display: block;
+        padding: 0;
+        color: $themeColor1;
+        background: none;
+        border-radius: 0;
+
+        @include respond-to(md) {
+            display: none;
+        }
+
+        .bar1,
+        .bar2,
+        .bar3 {
+            display: block;
+            height: 3px;
+            margin: 10px auto;
+            text-align: center;
+            background-color: $themeColor1;
+            transition: 0.25s;
+        }
+
+        .bar1,
+        .bar3 {
+            width: 40px;
+        }
+
+        .bar2 {
+            width: 20px;
+        }
+
+        &.active {
+            .bar1 {
+                transform: rotate(-45deg) translate(-8px, 8px);
+            }
+
+            .bar2 {
+                width: 0;
+            }
+
+            .bar3 {
+                transform: rotate(45deg) translate(-10px, -10px);
+            }
+        }
+
+        &:hover,
+        &:focus {
+            background-color: transparent;
+        }
+    }
+}
+
+.main-sidebar-toggle {
+    margin-left: 20px;
+
+    &-button {
+        //@extend .button-creative;
+    }
+}

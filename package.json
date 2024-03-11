@@ -1,0 +1,30 @@
+{
+  "name": "bro-barbershop",
+  "version": "1.0.0",
+  "author": "Motopress",
+  "license": "GPL-2.0-or-later",
+  "devDependencies": {
+    "@wordpress/scripts": "^26.0.0",
+    "dir-archiver": "^1.1.1",
+    "node-sass": "^7.0.1",
+    "pre-commit": "^1.2.2",
+    "rtlcss": "^3.5.0"
+  },
+  "rtlcssConfig": {
+    "options": {
+      "autoRename": false,
+      "autoRenameStrict": false,
+      "blacklist": {},
+      "clean": true,
+      "greedy": false,
+      "processUrls": false,
+      "stringMap": []
+    },
+    "plugins": [],
+    "map": false
+  },
+  "scripts": {
+    "watch": "node-sass sass/ -o ./ --source-map true --output-style expanded --indent-type tab --indent-width 1 -w",
+    "build": "node-sass sass/ -o ./ --output-style compressed"
+  }
+}

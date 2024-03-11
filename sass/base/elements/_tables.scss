@@ -1,0 +1,32 @@
+table {
+	width: 100%;
+	margin: 0;
+	color: $themeColor6;
+	border-collapse: collapse;
+	background-color: $themeColor1;
+
+	th,
+	td {
+		padding: 10px;
+		border-bottom: 1px solid $themeColor3;
+
+		@include respond-to(md) {
+			padding: 18px 20px;
+		}
+	}
+
+	th {
+		font-weight: 500;
+		text-align: left;
+	}
+
+	tbody:last-child tr,
+	tfoot:last-child tr {
+		&:last-child {
+			th,
+			td {
+				border-bottom: 0;
+			}
+		}
+	}
+}

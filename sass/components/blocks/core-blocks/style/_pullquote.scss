@@ -1,0 +1,62 @@
+.wp-block-pullquote {
+    border: 1px solid $themeColor5;
+
+    p {
+
+        &:last-of-type {
+            margin-bottom: 0;
+        }
+    }
+
+    cite {
+
+    }
+
+    .wp-block-pullquote__citation {
+        font-style: normal;
+        color: $themeColor2;
+    }
+
+    blockquote {
+        background: transparent;
+        padding: 0;
+        border-radius: 0;
+        margin: 0;
+
+        &:after {
+            display: none
+        }
+
+        p, cite {
+
+        }
+    }
+
+    &.alignleft,
+    &.alignright {
+
+        p {
+
+        }
+    }
+
+    &.is-style-solid-color {
+
+        p {
+
+        }
+
+        cite {
+
+        }
+
+        blockquote {
+
+            &.has-text-color {
+                p, cite {
+                    color: inherit;
+                }
+            }
+        }
+    }
+}

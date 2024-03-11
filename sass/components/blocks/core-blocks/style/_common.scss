@@ -1,0 +1,60 @@
+// .entry-content - default content wrapper class
+// change it if you need
+.entry-content {
+    > * {
+        max-width: $block-default-width;
+        margin-right: auto;
+        margin-bottom: $space-between-blocks;
+        margin-left: auto;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+
+        &.alignwide {
+            max-width: $block-wide-width;
+        }
+
+        &.alignfull {
+            width: auto;
+            max-width: $block-full-width;
+            margin-right: -20px;
+            margin-left: -20px;
+
+            @include respond-to(md) {
+                margin-right: -50px;
+                margin-left: -50px;
+            }
+        }
+
+        &.alignleft {
+            @media (min-width: 600px) {
+                margin-right: 30px;
+            }
+
+            @media (min-width: $block-default-width) {
+                margin-left: Max( calc(0.5 * (100vw - min(100vw, #{$block-default-width})) - 20px), 0px );
+                max-width: 400px;
+            }
+
+            @include respond-to(md) {
+                margin-left: Max( calc(0.5 * (100vw - min(100vw, #{$block-default-width})) - 50px), 0px );
+            }
+        }
+
+        &.alignright {
+            @media (min-width: 600px) {
+                margin-left: 30px;
+            }
+
+            @media (min-width: $block-default-width) {
+                margin-right: Max( calc(0.5 * (100vw - min(100vw, #{$block-default-width})) - 20px), 0px );
+                max-width: 400px;
+            }
+
+            @include respond-to(md) {
+                margin-right: Max( calc(0.5 * (100vw - min(100vw, #{$block-default-width})) - 50px), 0px );
+            }
+        }
+    }
+}
