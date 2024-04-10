@@ -4,9 +4,9 @@ Contributors: motopress
 Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready
 
 Requires at least: 5.8
-Tested up to: 6.4
+Tested up to: 6.5
 Requires PHP: 7.0
-Stable tag: 2.0.1
+Stable tag: 2.0.2
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -23,6 +23,9 @@ Modern and eye-catching, this free hair salon WordPress theme was made to presen
 3. Click Activate to use your new theme right away.
 
 == Changelog ==
+
+= 2.0.2 - Apr 10 2024 =
+* Fixed issue when sidebar may close after country select in Appointment Form.
 
 = 2.0.1 - Mar 11 2024 =
 * Fixed demo import configuration.

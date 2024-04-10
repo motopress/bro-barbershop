@@ -6,22 +6,35 @@
         $(this).closest('.mpa-cart-item').toggleClass('opened');
     });
 
-    let mainSidebar = $('#main-sidebar');
-    let mainSidebarOpen = $('.main-sidebar-toggle-button, .main-sidebar-toggle');
+    function initHeaderSidebar(element, toggler) {
 
-    mainSidebarOpen.on('click', function (e) {
-        e.preventDefault();
-        e.stopImmediatePropagation();
-        mainSidebar.toggleClass('opened');
-        $('body').toggleClass('sidebar-opened');
-    })
+        toggler.on('click', function (e) {
+            e.preventDefault();
+            element.addClass('opened');
+            $('body').addClass('sidebar-opened');
 
-    $(document).on('click', '#main-sidebar .close-sidebar', function (e) {
-        e.preventDefault();
-        e.stopImmediatePropagation();
-        $('#main-sidebar').toggleClass('opened');
-        $('body').toggleClass('sidebar-opened');
-    });
+            $('body').on('click', closeSidebarOnBodyClick );
+        })
+
+        function closeSidebarOnBodyClick(e) {
+            if ( e.target === e.currentTarget ) {
+                closeSidebar();
+            }
+        }
+
+        function closeSidebar() {
+            element.removeClass('opened');
+            $('body').removeClass('sidebar-opened');
+            $('body').off( 'click', closeSidebarOnBodyClick );
+        }
+
+        element.on('click', '.close-sidebar', function(e) {
+            e.preventDefault();
+            closeSidebar();
+        });
+    }
+
+    initHeaderSidebar($('#main-sidebar'), $('.main-sidebar-toggle-button, .main-sidebar-toggle'));
 
     let menuToggle = $('#menuToggle');
     let menuHolder = $('#masthead .main-navigation-container');
@@ -32,21 +45,6 @@
         menuToggle.toggleClass('active');
         menuHolder.toggleClass('opened');
         siteHeader.toggleClass('dropdown-opened');
-    });
-
-    $(document).on('click', function (event) {
-        if (!$('body').hasClass('sidebar-opened')) {
-            return;
-        }
-
-        const sidebar = $('#main-sidebar');
-
-        if ($(event.target).is(sidebar) || sidebar.has(event.target).length > 0) {
-            return;
-        }
-
-        sidebar.removeClass('opened');
-        $('body').removeClass('sidebar-opened');
     });
 
     let menu = $('.widget_nav_menu, .widget_pages, #site-navigation .menu'),
